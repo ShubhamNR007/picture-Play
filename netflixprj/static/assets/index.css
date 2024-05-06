@@ -1,0 +1,59 @@
+.masthead {
+    min-height: 100rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 20rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+      ),
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000000;
+  }
+  .masthead h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+  }
+  .masthead .mb-5 em {
+    color: #fd4b15e1;
+    text-transform: uppercase;
+    border: #000;
+  }
+  @media (min-width: 992px) {
+    .masthead {
+      height: 80vh;
+    }
+    .masthead h1 {
+      font-size: 5.5rem;
+    }
+  }
+  
+  .btn-xl {
+    padding: 1.25rem 2.5rem;
+    text-transform: uppercase;
+    background-color: #ce1833;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-xl:hover {
+    background-color: #fd3a69;
+    color: #000;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }

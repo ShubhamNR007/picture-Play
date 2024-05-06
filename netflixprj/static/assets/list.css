@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  font-family: "Source Serif Pro", serif;
+  background-color: #0d0d22;
+}  
+.navbar {
+  width: 95%;
+  margin: auto;
+  padding: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  cursor: pointer;
+  color: #ffffff;
+}
+.title {
+cursor: pointer;
+text-decoration: none;
+color: #ce1833;
+font-size: 18px;
+font-weight: 500;
+text-transform: uppercase;
+margin: 0 20px;
+display: inline-block;
+
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  background-color: #0d0d22;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar ul li ::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ce1833;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+}
+.navbar ul li :hover:after{
+  width: 100%;
+  transition: 0.5s;
+
+}
+
+/* ***************** */
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url("wakanda2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000000;
+}
+.masthead h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.masthead .mb-5 em {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .masthead {
+    height: 80vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+  text-transform: uppercase;
+  background-color: #ce1833;
+  border: none;
+  color: #fff;
+}
+
+.btn-xl:hover {
+  background-color: #fd3a69;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* ******************* */
+
+/* ******************* */
+.Container {
+margin: 2% 2% 0 3%;
+}
+.Movies img {
+margin-right: 1%;
+margin-bottom: 10%;
+width: 100%;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: -4px 4px 5px 0 #000;
+transition: 0.8s;
+}
+
+.Movies img:hover {
+transform: translateY(-10px);
+box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.Container h2 {
+margin-bottom: 2%;
+color: #f3e6e3;
+}
+
+.navbar {
+position: fixed; /* Make the navbar fixed */
+top: 0; /* Stick it to the top of the viewport */
+width: 100%; /* Make it full-width */
+background-color: #0d0d22;
+z-index: 100; /* Ensure it appears on top of other content */
+}
+
+/* *********** */

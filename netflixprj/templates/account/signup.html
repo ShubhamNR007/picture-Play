@@ -1,0 +1,57 @@
+
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Login Form | CodingNepal</title>
+    <link rel="stylesheet" href="{% static 'assets/login.css' %}">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Signup</h1>
+      <form method="post">
+        {% csrf_token %}
+        <div>
+            {% if form.errors %}
+            <p>
+                {{form.errors.email}}
+                {{form.errors.password1}}
+                {{form.errors.password2}}
+            {% endif %}
+            </p> 
+        </div>
+        <div class="txt_field">
+          <input   type="email" name="email" id="id_email" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+
+        <div class="txt_field">
+          <input  type="password" name="password1" id="id_password1" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txt_field">
+          <input  type="password" name="password2" id="id_password2" required>
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        
+        {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+
+        <input type="submit">
+        <div class="signup_link">
+            Have account already? <a href="{% url 'account_login' %}">Log In</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
+{% endblock content %}
